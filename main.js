@@ -1,12 +1,26 @@
 function adicionar() {
     const tarefaPura = document.getElementById("input").value
-    const p = document.createTextNode(tarefaPura)
     const listaDeTarefas = document.getElementById('listaDeTarefas')
-    const button = document.getElementById("button")
 
-    listaDeTarefas.appendChild(p)
+    const paragrafo = document.createElement('p')
+    const tarefa = document.createTextNode(` ${tarefaPura}`)
+    const checkbox = document.createElement('input')
+    
+    checkbox.type = "checkbox";
+    checkbox.name = "checkName";
+    checkbox.id = "idCheck";
+    checkbox.value = 'valor'
+    checkbox.checked = false
+ 
+    checkbox.addEventListener('click', function checkOff() {
+        console.log('desativando')
+    })
 
-    p.insertAdjacentElement(p, button)
-
-
+    paragrafo.appendChild(checkbox)
+    paragrafo.appendChild(tarefa)
+    listaDeTarefas.appendChild(paragrafo)
 }
+
+
+
+

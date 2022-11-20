@@ -45,4 +45,15 @@ body {
     height: 63%;
     top: 3%;
     left: 20%;
+    
+}
+
+.containerTarefas div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerTarefas div p {
+    margin-bottom: 2%;
 }
