@@ -23,7 +23,7 @@ body {
 }
 
 .title {
-    height: 20%;
+    height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,6 +33,7 @@ body {
 .center {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .center button {
@@ -56,4 +57,14 @@ body {
 
 .containerTarefas div p {
     margin-bottom: 2%;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button {
+    padding: 2%;
+    background: #cfcccc;
 }
